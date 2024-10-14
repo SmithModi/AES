@@ -1,0 +1,331 @@
+.carousel-img{
+  width: 70%;
+  height: 70%;
+  margin-left: 130px;
+}
+
+
+
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+/* index.css */
+
+/* General styling */
+body {
+  font-family: Arial, sans-serif;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+p {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+main {
+  padding: 20px;
+  text-align: center;
+}
+
+/* Steps section styling */
+.steps {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.step {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  width: 80%;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.step h2 {
+  font-size: 1.5rem;
+  color: #2c3e50;
+}
+
+.step p {
+  font-size: 1rem;
+  color: #7f8c8d;
+}
+
+/* Carousel CSS Hover effect for steps */
+/* Base Styles */
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+header {
+  background-color: #f7f7f7;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+/* Steps Container */
+.steps {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 10px; /* Added padding to avoid touching screen edges */
+  margin: 20px 0; /* Margin on top and bottom */
+}
+
+/* Individual Step Styles */
+.step {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 10px; /* Space between steps */
+  flex: 1 1 calc(45% - 20px); /* Responsive two columns */
+  max-width: calc(45% - 20px); /* Prevent overflowing */
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 600px) {
+  .step {
+    flex: 1 1 100%; /* Stack steps on small screens */
+    max-width: 100%;
+  }
+}
+
+/* Hover Effects */
+.step:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+}
+
+.step i {
+  font-size: 2rem;
+  margin-top: 10px;
+  color: #3498db;
+}
+
+/* Active step styling */
+.step.active {
+  background-color: #3498db;
+  color: white;
+}
+
+.step.active i {
+  color: white;
+}
+
+/* Icon styling */
+.step i {
+  font-size: 24px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.step:hover i {
+  animation: icon-bounce 0.5s ease-in-out; /* Add animation effect */
+}
+
+
+/* BLOG CSS */
+/* index.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+.blog-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px; /* Space inside the container */
+}
+
+.inner-page-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.inner-page-header h1 {
+  font-size: 2.5em;
+  color: #333;
+}
+
+.sub-text {
+  font-size: 1.2em;
+  color: #777;
+}
+
+.blog-posts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Space between posts */
+}
+
+.blog-post {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: calc(33.333% - 20px); /* 3 columns */
+  transition: transform 0.2s;
+  padding: 15px; /* Padding inside each post for spacing */
+}
+
+.blog-post:hover {
+  transform: scale(1.02); /* Slight zoom on hover */
+}
+
+.blog-image {
+  width: 60px;
+  height: 60px; /* Reduce image width for a smaller size */
+  height: auto; /* Maintain aspect ratio */
+  max-height: 100px; /* Further reduce maximum height */
+  object-fit: cover; /* Ensure image covers its area */
+  margin: 0 auto; /* Center the image horizontally */
+  display: block; /* Ensures the image behaves like a block element */
+}
+
+.blog-title {
+  font-size: 1.5em;
+  margin: 15px 0; /* Top and bottom margin for title */
+  color: #333;
+  text-align: center; /* Center title */
+}
+
+.meta {
+  font-size: 0.9em;
+  color: #555;
+  margin: 0 15px 15px;
+  text-align: center; /* Center meta info */
+}
+
+.meta span {
+  margin-right: 10px;
+}
+
+.meta a {
+  color: #007bff; /* Bootstrap primary color */
+  text-decoration: none;
+}
+
+.meta a:hover {
+  text-decoration: underline;
+}
+
+/* ABOUT CSS */
+
+
+
+.about-container {
+  text-align: center;
+  margin: 0 auto;
+  background-color: #f4f4f9;
+  max-width: 1400px;
+  padding: 20px; /* Space inside the container */
+  border-radius: 16px;
+  padding: 60px 0;
+  margin: 10px 20px;
+}
+
+.service-container {
+  max-width: 800px;
+  align-items: center;
+  display: flex;
+  margin-left: 23%;
+  flex-wrap: wrap;
+  justify-content: space;
+  
+}
+
+.service-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  margin: 10px;
+  flex: 1 1 calc(30% - 20px); /* Responsive card size */
+  transition: transform 0.2s;
+}
+
+.service-card:hover {
+  transform: scale(1.05);
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin-top: 30px;
+  font-size: 2em;
+}
+
+h3 {
+  margin: 10px 0;
+}
+
+p {
+  color: #666;
+}
+
+
+@keyframes icon-bounce {
+  0% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-10px);
+  }
+  100% {
+      transform: translateY(0);
+  }
+}
